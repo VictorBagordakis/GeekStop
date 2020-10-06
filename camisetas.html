@@ -6,7 +6,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para colocar o ícone de carrinho de compras--> 
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rationale">
 		<link href="style.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="geek_stop_script.js" defer></script>
+		<script src="geek_stop_script.js" defer></script>
 
 		<title>Geek Stop</title>
 	</head>
@@ -14,7 +14,7 @@
 		<header id="topo">
 			<h1 class="logo"><a href="pagina_inicial.html" class="logoAncora">Geek Stop</a></h1>
 
-			<div id="barra de pesquisa" class = "barraDePesquisa">
+			<div id="barraDePesquisa" class = "barraDePesquisa">
 				<input type="text" placeholder="Busque seu produto aqui" class="campoDePesquisa">
 				<button class="botao_pesquisa"><span class="material-icons">search</span></button>
 			</div>
@@ -23,10 +23,9 @@
 
 		<nav id="navSecundaria">
 			<ul id="ulNavSecundaria">
-				<li><a href="#login" class="itemDecoration2">Login</a></li><span>|</span>
+				<li><a href="login.html" class="itemDecoration2">Login</a></li>
 				<li><a href="#cadastre-se" class="itemDecoration2">Cadastre-se</a></li>
 				<li><a href="#carrinho_de_compras" class="itemDecoration2"><span class="material-icons">shopping_cart</span></a></li>
-				</ul>
 			</ul>
 		</nav>
 
@@ -58,7 +57,7 @@
 			</ul>
 		</div>
 
-		<section id="produtos" id="secaoMasculina" class="secaoProdutos">
+		<div id="secaoMasculina" class="secaoProdutos">
 			<div id="camisetasMasculinas" class="produtos">
 				<div class="produto">
 					<img src="camisetas_masculinas/camiseta_masculina1.jpg" alt="Camiseta do Mário masculina">
@@ -97,9 +96,9 @@
 					<span class="material-icons">add_shopping_cart</span>
 				</div>
 			</div>
-		</section>
+		</div>
 
-		<section id="secaoFeminina" class="secaoProdutos">
+		<div id="secaoFeminina" class="secaoProdutos">
 			<div id="camisetasFemininas" class="produtos">
 				<div class="produto">
 					<img src="camisetas_femininas/camiseta_feminina1.jpg" alt="Camiseta Avengers feminina">
@@ -138,7 +137,7 @@
 					<span class="material-icons">add_shopping_cart</span>
 				</div>						
 			</div>
-		</section>
+		</div>
 
 		<!--<section>
 			<div id="camisetasInfantis" class="produtos">
@@ -151,9 +150,6 @@
 			</div>
 		</section>
 		-->
-
-		</section>
-
 		<footer>
 			<p>Autores: João Pedro Castro de Souza Brunet, Marcos Venicio Vieira Lima, Matheus Luiz Mendes, Rafael Petricio Rodrigues, Victor Hugo Bagordakis da Rocha</p>
 		</footer>
