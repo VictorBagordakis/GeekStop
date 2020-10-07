@@ -1,3 +1,4 @@
+
 h2, h3{
 	font-family: Times, serif;
 	color: #0C0A0D;
@@ -31,9 +32,10 @@ h3{
 }
 
 header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 3;
 	width: 100%;
 	height: 160px;
 	background-color: #E41730;
@@ -79,7 +81,8 @@ header ul li a:hover{
 }
 
 #navPrimaria{
-	position: absolute;
+	position: fixed;
+	z-index: 3;
 	left: 0;
 	width: 100%;
 	height: 50px;
@@ -88,7 +91,8 @@ header ul li a:hover{
 }
 
 #navSecundaria{
-	position: absolute;
+	position: fixed;
+	z-index: 3;
 	right: 0;
 	width: 400px;
 	top:20px;
@@ -139,8 +143,23 @@ footer {
 	
 }
 
-#pagina_inicial{
+#paginaInicial{
+	width: 100%;
+	top: 210px;
+	left: 0;
+	margin-top: 210px;
 	margin-bottom: 50px;
+	background-color: white;
+	z-index: 2;
+}
+
+#camisetas{
+	width: 100%;
+	top: 210px;
+	left: 0;
+	margin-top: 210px;
+	margin-bottom: 50px;
+	background-color: white;
 }
 
 .filtro{
@@ -150,6 +169,7 @@ footer {
 	width: 10%;
 	display: inline;
 	padding: 0;
+	margin-bottom: 50px;
 }
 
 .tituloFiltro{
@@ -210,6 +230,6 @@ footer {
 }
 
 img{
-	width: 10%;
-	height: 10%;
+	width: 200px;
+	height: 200px;
 }
