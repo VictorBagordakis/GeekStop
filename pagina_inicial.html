@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 	<head>
+		<title>Geek Stop</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta charset="UTF-8">
 		
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para colocar o ícone de carrinho de compras--> 
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rationale">
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<script src="geek_stop_script.js" defer></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para colocar o ícone de carrinho de compras-->
 
-		<title>Geek Stop</title>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rationale"> <!-- Link para adicionar a fonte do logo -->
+
+		<link href="style.css" rel="stylesheet" type="text/css">
+
+		<script src="geek_stop_script.js"></script>
 	</head>
+
 	<body>
 		<header id="topo">
 			<h1 class="logo"><a href="pagina_inicial.html" class="logoAncora">Geek Stop</a></h1>
 
 			<div id="barraDePesquisa" class = "barraDePesquisa">
 				<input type="text" placeholder="Busque seu produto aqui" class="campoDePesquisa">
-				<button class="botao_pesquisa"><span class="material-icons">search</span></button>
+				<button class="botaoParaPesquisar"><span class="material-icons">search</span></button>
 			</div>
 			
 		</header>
@@ -40,12 +44,92 @@
 		</nav>
 
 		<section id="paginaInicial">
-			<h2>Tela Inicial</h2>
+			<h2 style="display: none;">Tela Inicial</h2>
+			<div class="carousel">
+				<div class="paginaCarousel fade" style="display: block;">
+					<div class="numeroSlide">1 / 3</div>
+					<img src="imagens_carousel/ofertas.jpg" class="imagemCarousel" alt="Promoção">
+				</div>
+				<div class="paginaCarousel fade" style="display: none;">
+					<div class="numeroSlide">2 / 3</div>
+					<img src="camisetas_masculinas/camiseta_masculina4.jpg" class="imagemCarousel" alt="Camiseta Naruto masculina">
+					<div class="legendaCarousel">Camiseta Naruto masculina 59,90</div>
+				</div>
+				<div class="paginaCarousel" style="display: none;">
+					<div class="numeroSlide">3 / 3</div>
+					<img src="camisetas_masculinas/camiseta_masculina3.jpg" class="imagemCarousel" alt="Camiseta Saint Seiya masculina">
+					<div class="legendaCarousel">Camiseta Saint Seiya masculina 39,90</div>
+				</div>
+
+				<div class="anterior" onclick="plusSlides(-1);">&#10094;</div>
+				<div class="proximo" onclick="plusSlides(1);">&#10095;</div>
+			</div>
+
+			<div class="secaoProdutosTelaInicial">
+				<span class="destaques">Destaques</span>
+				<div class="produtos" >
+					<div class="produto">
+						<img src="camisetas_masculinas/camiseta_masculina1.jpg" alt="Camiseta do Mário masculina" class="imagensProdutos">
+						<span class="nomeProduto">Camiseta Mário masculina</span>
+						<span class="precoProduto">99,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="camisetas_masculinas/camiseta_masculina2.jpg" alt="Camiseta Dororo masculina" class="imagensProdutos">
+						<span class="nomeProduto">Camiseta Dororo masculina</span>
+						<span class="precoProduto">59,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="camisetas_masculinas/camiseta_masculina3.jpg" alt="Camiseta Saint Seiya masculina" class="imagensProdutos">
+						<span class="nomeProduto">Camiseta Saint Seiya masculina</span>
+						<span class="precoProduto">39,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="camisetas_femininas/camiseta_feminina1.jpg" alt="Camiseta Avengers feminina" class="imagensProdutos">
+						<span class="nomeProduto">Camiseta Avengers feminina</span>
+						<span class="precoProduto">99,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="camisetas_femininas/camiseta_feminina2.jpg" alt="Camiseta Star wars feminina" class="imagensProdutos">
+						<span class="nomeProduto">Camiseta Star wars feminina</span>
+						<span class="precoProduto">59,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="camisetas_femininas/camiseta_feminina3.jpg" alt="Camiseta Game of Thrones feminina" class="imagensProdutos">
+						<span class="nomeProduto">Camiseta Game of Thrones feminina</span>
+						<span class="precoProduto">39,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="bones/bone1.jpg" alt="Boné Batman" class="imagensProdutos">
+						<span class="nomeProduto">Boné Batman</span>
+						<span class="precoProduto">99,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="acessorios/chaveiro1.jpg" alt="Chaveiro Game of Thrones" class="imagensProdutos">
+						<span class="nomeProduto">Chaveiro Game of Thrones</span>
+						<span class="precoProduto">59,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+					<div class="produto">
+						<img src="acessorios/chaveiro2.jpg" alt="Chaveiro Harry Potter" class="imagensProdutos">
+						<span class="nomeProduto">Chaveiro Harry Potter</span>
+						<span class="precoProduto">39,90</span>
+						<button><span class="material-icons iconeAdicionarCarrinho">add_shopping_cart</span></button>
+					</div>
+				</div>
+			</div>
+
 		</section>
 
 		
 		<footer>
-			<p>Autores: João Pedro Castro de Souza Brunet, Marcos Venicio Vieira Lima, Matheus Luiz Mendes, Rafael Petricio Rodrigues, Victor Hugo Bagordakis da Rocha</p>
+			<p>Autores: João Pedro Castro de Souza Brunet, Marcos Venicio Vieira Lima, Matheus Luiz Mendes, Rafael Patricio Rodrigues, Victor Hugo Bagordakis da Rocha</p>
 		</footer>
 
 	</body>

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 	<head>
 		<meta charset="UTF-8">
 		
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--Link para colocar o ícone de carrinho de compras--> 
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Rationale">
 		<link href="style.css" rel="stylesheet" type="text/css">
-		<script src="geek_stop_script.js" defer></script>
+		<script src="geek_stop_script.js"></script>
 
 		<title>Geek Stop</title>
 	</head>
@@ -16,7 +16,7 @@
 
 			<div id="barraDePesquisa" class = "barraDePesquisa">
 				<input type="text" placeholder="Busque seu produto aqui" class="campoDePesquisa">
-				<button class="botao_pesquisa"><span class="material-icons">search</span></button>
+				<button class="botaoParaPesquisar"><span class="material-icons">search</span></button>
 			</div>
 			
 		</header>
@@ -39,14 +39,27 @@
 			</ul>
 		</nav>
 
-		<section id="login">
+		<div id="login">
 			<h2>Login</h2>
-		</section>
-		
+			<div class="container">
+				<form id="form">
+					<label for="email" style="font-weight: bold;">Email</label>
+					<input id="email" type="email" placeholder="Insira seu email" name="email" class="campoLogin" required>
+
+					<label for="senha" style="font-weight: bold;">Senha</label>
+					<input id="senha" type="password" placeholder="Insira sua senha" name="senha" class="campoSenha" required>
+
+					<span class="recuperarSenha">Esqueceu sua <a href="#recuperar_senha">senha?</a></span>
+
+					<button id="botaoLogin" type="submit" class="botaoLogin">Login</button>
+					<label><input type="checkbox" checked="checked" name="lembrarSenha">Lembrar senha</label>
+				</form>
+			</div>
+		</div>
 
 		
 		<footer>
-			<p>Autores: João Pedro Castro de Souza Brunet, Marcos Venicio Vieira Lima, Matheus Luiz Mendes, Rafael Petricio Rodrigues, Victor Hugo Bagordakis da Rocha</p>
+			<p>Autores: João Pedro Castro de Souza Brunet, Marcos Venicio Vieira Lima, Matheus Luiz Mendes, Rafael Patricio Rodrigues, Victor Hugo Bagordakis da Rocha</p>
 		</footer>
 
 	</body>
