@@ -236,19 +236,14 @@ function filtroTamanho(){
 }
 
 
-/*Código para o funcionamento do Carousel.*/
+/*Código para o funcionamento do Carousel. Para fazer o funcionamento Carousel, foi utilizado o código disponível em https://www.w3schools.com/howto/howto_js_slideshow.asp*/
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Mudar para o próximo slide ou para o slide anterior
 function plusSlides(n) {
   showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -266,4 +261,23 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
+}
+
+function compararSenhas(){
+    var senha = document.getElementById("senha").value;
+    var confirmarSenha = document.getElementById("confirmarSenha").value;
+    if(senha != confirmarSenha){
+        alert("As senhas não coincidem!");
+        return false;
+    }
+    return true;
+}
+
+function validarSenha(){
+    var senha = document.getElementById("senha").value;
+    if(senha.length < 10){
+        alert("Sua senha deve possuir pelo menos 10 caracteres!");
+        return false;
+    }
+    return true;
 }

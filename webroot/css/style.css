@@ -1,4 +1,5 @@
 
+
 h2, h3{
 	font-family: Times, serif;
 	color: #0C0A0D;
@@ -6,7 +7,7 @@ h2, h3{
 
 h2{
 	position: absolute;
-	top: 210px;
+	top: 150px;
 	left: 5%;
 	font-size: 28px;
 }
@@ -20,7 +21,7 @@ h3{
 	right: 2%;
 	height: 30px;
 	max-height: 30px;
-	top: 110px;
+	top: 60px;
 	display: flex;
 	position: absolute;
 	bottom: 0;
@@ -40,22 +41,20 @@ header{
 	left: 0;
 	z-index: 3;
 	width: 100%;
-	padding-bottom: 160px;
+	height: 100px;
 	background-color: #E41730;
 }
 
-.logo{
-	position: absolute;
-	text-decoration: none;
-	font-family: Rationale, sans-serif;
-	font-size: 60px;
-	left: 5%;
-}
 
 .logoAncora{
+	position: absolute;
+	font-size: 60px;
+	left: 5%;
+	font-family: Rationale, sans-serif;
 	color: white;
 	text-decoration: none;
 	color: white;
+	padding: 0px;
 }
 
 .logoAncora:hover{
@@ -73,7 +72,8 @@ header{
 	max-width: 100%;
 	
 	background-color: #242424;
-	top: 160px;
+	top: 100px;
+	height: 40px;
 	align-items: center;
 }
 
@@ -106,7 +106,6 @@ nav ul li{
 }
 
 .itemDecoration1{
-	display: inline;
 	text-decoration: none;
 	color: white;
 	font-family: Times, serif;
@@ -119,7 +118,6 @@ nav ul li{
 }
 
 .itemDecoration2{
-	display: inline;
 	text-decoration: none;
 	color: black;
 	font-family: Times, serif;
@@ -128,11 +126,6 @@ nav ul li{
 .itemDecoration2:hover{
 	text-decoration: underline;
 	color: black;
-}
-
-nav ul li a:hover{
-	text-decoration: underline;
-	color: white;
 }
 
 
@@ -152,18 +145,20 @@ footer {
 
 /*Tela Inicial*/
 
+/*Para fazer o Carousel, foi utilizado o tutorial disponivel em https://www.w3schools.com*/
 .carousel{
 	position: absolute;
-	top: 270px;
+	top: 200px;
 	background-color: grey;
-	margin-bottom: 80px;
-	margin-right: 50px;
-	left: 100px;
-	width: 70%;
-	max-width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	
+	width: 1200px;
 	height: 400px;
 	
-	max-height: 500px;
+	
 	display: flex;
 }
 
@@ -243,12 +238,13 @@ footer {
   	from {opacity: .4}
   	to {opacity: 1}
 }
+/* Fim do style do Carousel */
 
 
 .secaoProdutosTelaInicial{
 	box-sizing: border-box;
 	position: absolute;
-	top: 700px;
+	top: 600px;
 	margin-bottom: 80px;
 	padding: 16px;
 	width: 1200px;
@@ -266,7 +262,7 @@ footer {
 	text-align: center; 
 	position: absolute;
 	top: 0;
-	font-size: 40px;
+	font-size: 30px;
 	padding-bottom: 20px;
 }
 
@@ -277,7 +273,7 @@ footer {
 .filtro{
 	position: absolute;
 	left: 4%;
-	top: 300px;
+	top: 230px;
 	width: 150px;
 	max-width: 150px;
 	display: inline;
@@ -315,7 +311,7 @@ footer {
 .secaoProdutos{
 	box-sizing: border-box;
 	position: absolute;
-	top: 270px;
+	top:200px;
 	margin-bottom: 80px;
 	padding: 16px;
 	width: 1200px;
@@ -337,22 +333,27 @@ footer {
 .produto{
   	padding: 12px 20px;
   	margin: 0 auto;
-  	box-sizing: border-box;
-  	display: inline;  
+  	box-sizing: border-box; 
   	width: 33%;
   	height: 33%;	
   	text-align: center;
   	align-items: center;
+  	display: flex;
+  	flex-wrap: wrap;
+}
+
+#infoProduto{
+	align-items: center;
 }
 
 .nomeProduto{
 	box-sizing: border-box;
-	font-size: 20px;	
+	font-size: 18px;
 }
 
 .precoProduto{
 	box-sizing: border-box;
-	font-size: 60px;
+	font-size: 40px;
 	margin-right: 70px;
 }
 
@@ -363,10 +364,10 @@ footer {
 
 .imagensProdutos{
 	float: left;
-	width: 300px;
-	height: 300px;
-	max-width: 300px;
-	max-height: 300px;
+	width: 200px;
+	height: 200px;
+	max-width: 200px;
+	max-height: 200px;
 	margin: 0 auto;
 	border-style: ridge;
 
@@ -378,7 +379,7 @@ footer {
 	display: inline-block;
 	box-sizing: border-box;
 	position: absolute;
-	top: 270px;
+	top: 200px;
 	margin-bottom: 80px;
 	padding: 16px;
 	width: 60%;
@@ -404,16 +405,8 @@ footer {
 	opacity: 0.8;
 }
 
-.campoLogin{
+.campo{
   	width: 100%;
-  	padding: 12px 20px;
-  	margin: 8px 0;
-  	box-sizing: border-box;
-  	border: 1px solid;
-}
-
-.campoSenha{
- 	width: 100%;
   	padding: 12px 20px;
   	margin: 8px 0;
   	box-sizing: border-box;
@@ -424,45 +417,31 @@ footer {
   float: left;
 }
 
-
-
-
-@media screen and(min-width: 768px){
-	.secaoProdutosTelaInicial{
-		box-sizing: border-box;
+@media screen and(max-width: 768px){
+	.carousel{
 		position: absolute;
-		top: 700px;
-		margin-bottom: 80px;
-		padding: 16px;
-		width: 500px;
-		max-width: 500px;
-		
-		left: 0;
-		right: 0;
+		top: 200px;
+		background-color: grey;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: white;
-		border: 1px auto;
+		left: 0;
+		right: 0;
+		
+		width: 500px;
+		height: 166.666px;
+		
+		display: flex;
 	}
 
-	.produto{
-	  	padding: 12px 20px;
-	  	margin: 0 auto;
-	  	box-sizing: border-box;
-	  	display: inline;  
-	  	width: 50%;
-	  	height: 50%;	
-	  	text-align: center;
-	  	align-items: center;
-	}
-
-	.imagensProdutos{
-		float: left;
-		width: 100px;
-		height: 100px;
-		max-width: 100px;
-		max-height: 100px;
-		margin: 0 auto;
-		border-style: ridge;
+	.logoAncora{
+		position: absolute;
+		font-size: 20px;
+		left: 5%;
+		font-family: Rationale, sans-serif;
+		color: white;
+		text-decoration: none;
+		color: white;
+		padding: 0px;
 	}
 }
+
